@@ -40,4 +40,5 @@ gem 'jquery-rails'
 
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'simple_form'
 
