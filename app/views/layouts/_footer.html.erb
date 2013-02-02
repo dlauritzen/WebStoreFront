@@ -1,3 +1,19 @@
 
-Site copyright &copy; 2013 Dallin Lauritzen
+<div class="row">
+  <div class="span6" style="text-align: left;">
+    <ul class="unstyled inline">
+      <% if user_signed_in? %>
+      <li><%= link_to "Edit Account", edit_user_registration_path %></li>
+      <% end %>
+
+      <% if current_user.try(:admin) %>
+      <li><a href="#">Admin Panel</a></li>
+      <% end %>
+    </ul>
+  </div>
+  
+  <div class="span6">
+    Site copyright &copy; 2013 Dallin Lauritzen
+  </div>
+</div>
 
